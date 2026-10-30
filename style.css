@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #f4f7fc;
+color: #172554;
+line-height: 1.6;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 7%;
+background: #ffffff;
+border-bottom: 1px solid #e5eaf5;
+}
+
+.logo {
+font-size: 25px;
+font-weight: bold;
+color: #2563eb;
+}
+
+.nav-links a {
+text-decoration: none;
+color: #475569;
+margin-left: 24px;
+font-size: 14px;
+}
+
+.nav-links a:hover {
+color: #2563eb;
+}
+
+.hero {
+display: grid;
+grid-template-columns: 1.2fr 0.8fr;
+gap: 45px;
+align-items: center;
+max-width: 1200px;
+margin: auto;
+padding: 70px 30px;
+}
+
+.badge {
+display: inline-block;
+background: #dbeafe;
+color: #1d4ed8;
+padding: 7px 13px;
+border-radius: 20px;
+font-size: 11px;
+font-weight: bold;
+letter-spacing: 1px;
+}
+
+.hero h1 {
+font-size: 43px;
+line-height: 1.25;
+margin: 24px 0;
+}
+
+.hero h1 span {
+color: #2563eb;
+}
+
+.hero-content > p {
+color: #64748b;
+max-width: 520px;
+margin-bottom: 25px;
+}
+
+.btn {
+display: inline-block;
+background: #2563eb;
+color: white;
+padding: 13px 24px;
+border: none;
+border-radius: 8px;
+text-decoration: none;
+font-size: 15px;
+font-weight: bold;
+cursor: pointer;
+transition: background 0.2s;
+}
+
+.btn:hover {
+background: #1d4ed8;
+}
+
+.btn-secondary {
+margin-top: 15px;
+background: #eff6ff;
+color: #1d4ed8;
+}
+
+.btn-secondary:hover {
+background: #dbeafe;
+}
+
+.features {
+display: flex;
+flex-wrap: wrap;
+gap: 38px;
+margin-top: 38px;
+}
+
+.features h3 {
+color: #2563eb;
+font-size: 21px;
+}
+
+.features p {
+color: #64748b;
+font-size: 13px;
+}
+
+.quiz-card {
+background: white;
+padding: 32px;
+border: 1px solid #e2e8f0;
+border-radius: 16px;
+box-shadow: 0 10px 30px rgba(30, 64, 175, 0.06);
+}
+
+.quiz-card h2 {
+margin-bottom: 8px;
+}
+
+.quiz-card > p {
+color: #64748b;
+margin-bottom: 18px;
+}
+
+.quiz-card ul {
+padding-left: 22px;
+color: #475569;
+}
+
+.quiz-card li {
+margin-bottom: 12px;
+}
+
+form label {
+display: block;
+margin-top: 17px;
+margin-bottom: 6px;
+font-weight: bold;
+font-size: 14px;
+}
+
+form input:not([type="radio"]) {
+width: 100%;
+padding: 13px;
+border: 1px solid #cbd5e1;
+border-radius: 8px;
+font-size: 15px;
+}
+
+form input:focus {
+outline: 2px solid #93c5fd;
+border-color: #2563eb;
+}
+
+footer {
+text-align: center;
+padding: 24px;
+color: #64748b;
+border-top: 1px solid #e5eaf5;
+font-size: 13px;
+}
+
+/* Quiz interface */
+
+.quiz-container {
+max-width: 850px;
+margin: 35px auto;
+padding: 20px;
+}
+
+.quiz-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 15px;
+margin-bottom: 20px;
+}
+
+.timer {
+background: #dbeafe;
+color: #1d4ed8;
+padding: 10px 16px;
+border-radius: 9px;
+font-weight: bold;
+}
+
+.timer.warning {
+background: #fee2e2;
+color: #b91c1c;
+}
+
+.progress-track {
+width: 100%;
+height: 9px;
+background: #e2e8f0;
+border-radius: 10px;
+overflow: hidden;
+margin: 12px 0 25px;
+}
+
+.progress-fill {
+height: 100%;
+width: 0%;
+background: #2563eb;
+border-radius: 10px;
+transition: width 0.2s;
+}
+
+.question-card {
+padding: 24px 0;
+border-bottom: 1px solid #e5eaf5;
+}
+
+.question-card h3 {
+font-size: 17px;
+margin-bottom: 14px;
+}
+
+.option-label {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 12px 14px;
+margin: 9px 0;
+border: 1px solid #e2e8f0;
+border-radius: 8px;
+cursor: pointer;
+font-weight: normal;
+background: #ffffff;
+}
+
+.option-label:hover {
+background: #eff6ff;
+border-color: #93c5fd;
+}
+
+.option-label input {
+width: 17px;
+height: 17px;
+accent-color: #2563eb;
+}
+
+.quiz-submit {
+margin-top: 25px;
+}
+
+.result-score {
+font-size: 46px;
+font-weight: bold;
+color: #2563eb;
+margin: 18px 0;
+}
+
+@media (max-width: 800px) {
+.hero {
+grid-template-columns: 1fr;
+padding: 40px 20px;
+}
+
+
+.hero h1 {
+    font-size: 34px;
+}
+
+.navbar {
+    padding: 18px 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.nav-links a {
+    margin-left: 10px;
+}
+
+.quiz-container {
+    margin: 15px auto;
+    padding: 15px;
+}
+
+.quiz-card {
+    padding: 22px;
+}
+
+
+}

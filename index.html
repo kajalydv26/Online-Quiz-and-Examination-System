@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Quiz System</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f6fc;
+            color: #172b4d;
+        }
+
+        header {
+            background: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+            color: #2864f0;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #2864f0;
+            font-weight: bold;
+        }
+
+        .hero {
+            max-width: 1200px;
+            margin: auto;
+            padding: 75px 7%;
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 760px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e3ecff;
+            color: #2864f0;
+            padding: 9px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: clamp(36px, 5vw, 54px);
+            line-height: 1.15;
+            margin: 10px 0 20px;
+        }
+
+        h1 span {
+            color: #2864f0;
+        }
+
+        .description {
+            font-size: 19px;
+            line-height: 1.8;
+            color: #64748b;
+            margin-bottom: 30px;
+        }
+
+        .start-btn {
+            display: inline-block;
+            background: #2864f0;
+            color: white;
+            text-decoration: none;
+            padding: 19px 32px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .start-btn:hover {
+            background: #174fd0;
+        }
+
+        .stats {
+            display: flex;
+            gap: 55px;
+            margin-top: 48px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            min-width: 90px;
+        }
+
+        .stat h2 {
+            font-size: 28px;
+            color: #2864f0;
+            margin: 0 0 10px;
+        }
+
+        .stat p {
+            color: #64748b;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .features {
+            background: white;
+            padding: 55px 7%;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 30px;
+            margin-top: 0;
+        }
+
+        .feature-list {
+            max-width: 1000px;
+            margin: 30px auto 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .feature-card {
+            padding: 25px;
+            border: 1px solid #e0e7f3;
+            border-radius: 14px;
+            background: #f8faff;
+        }
+
+        .feature-card h3 {
+            color: #2864f0;
+        }
+
+        .feature-card p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                padding: 18px 5%;
+            }
+
+            .hero {
+                padding: 55px 6%;
+            }
+
+            .stats {
+                gap: 30px;
+            }
+
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Online Quiz System</div>
+        <a class="nav-link" href="login.html">Login</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+
+                <div class="badge">Test Your Knowledge</div>
+
+                <h1>
+                    Learn, Practice and
+                    <span>Evaluate Yourself</span>
+                </h1>
+
+                <p class="description">
+                    Challenge yourself with our online quiz system.
+                    Answer questions covering Java, HTML, CSS, Java Servlets,
+                    DBMS, Python and Artificial Intelligence.
+                    Evaluate your knowledge and view your results instantly.
+                </p>
+
+                <a class="start-btn" href="login.html">
+                    Start Your Quiz &rarr;
+                </a>
+
+                <div class="stats">
+
+                    <div class="stat">
+                        <h2>20</h2>
+                        <p>Questions</p>
+                    </div>
+
+                    <div class="stat">
+                        <h2>20 Min</h2>
+                        <p>Duration</p>
+                    </div>
+
+                    <div class="stat">
+                        <h2>Instant</h2>
+                        <p>Results</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Quiz Features</h2>
+
+            <div class="feature-list">
+
+                <div class="feature-card">
+                    <h3>Multiple Choice Questions</h3>
+                    <p>
+                        Practice with questions from seven
+                        computer science and AI-related topics.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Timed Assessment</h3>
+                    <p>
+                        Complete the quiz within the 20-minute
+                        time limit.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Instant Results</h3>
+                    <p>
+                        View your score and performance
+                        after submitting your answers.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Online Quiz System | MCA Mini Project
+    </footer>
+
+</body>
+</html>
